@@ -1,5 +1,11 @@
 import { uuid } from 'uuidv4';
 
+interface TransactionConstructor {
+  title: string;
+  value: number;
+  type: 'incime' | 'outcome';
+}
+
 class Transaction {
   id: string;
 
